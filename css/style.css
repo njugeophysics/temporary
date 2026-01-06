@@ -2466,5 +2466,25 @@ a.move-top span{
 @media(max-width:320px) {
     
 }
+/* 统一人员照片尺寸 - 添加到文件末尾 */
+.blog-grids .col-lg-7 img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    object-position: center top;  /* 优先显示上半部分（人脸） */
+}
 
+/* 响应式调整 */
+@media (max-width: 991px) {
+    .blog-grids .col-lg-7 img {
+        height: 300px;
+    }
+}
+
+@media (max-width: 576px) {
+    .blog-grids .col-lg-7 img {
+        height: 250px;
+    }
+}
 /*--//responsive design --*/
+
