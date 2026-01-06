@@ -2466,25 +2466,11 @@ a.move-top span{
 @media(max-width:320px) {
     
 }
-/* 统一人员照片尺寸 - 添加到文件末尾 */
-.blog-grids .col-lg-7 img {
-    width: 100%;
-    height: 350px;
-    object-fit: cover;
-    object-position: center top;  /* 优先显示上半部分（人脸） */
+.blog-img1 img, .blog-img2 img {
+    width: 200px !important;  /* 强制宽度为 200px */
+    height: auto !important;   /* 高度根据原图比例自动调整，防止变形 */
+    display: block;            /* 设为块级元素以便居中 */
+    margin: 0 auto;           /* 如果需要图片在所在列中水平居中，请保留此行 */
 }
 
-/* 响应式调整 */
-@media (max-width: 991px) {
-    .blog-grids .col-lg-7 img {
-        height: 300px;
-    }
-}
-
-@media (max-width: 576px) {
-    .blog-grids .col-lg-7 img {
-        height: 250px;
-    }
-}
-/*--//responsive design --*/
 
